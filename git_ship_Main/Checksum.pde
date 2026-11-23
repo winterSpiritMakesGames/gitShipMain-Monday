@@ -1,12 +1,8 @@
 class Checksum {
-  int checksum = 3;
+  int checksum = 0;
   color[] barColors = { color(#FF004D), color(#29ADFF), color(#FFEC27), color(#FFEC27), color(#FFEC27), color(#FFEC27), color(#FFEC27), color(#FFEC27), color(#FFEC27), color(#C2C3C7) };
 
-  Checksum(){ 
-    char[] bin = binary(checksum).toCharArray();
-    if(parkingBrake == true) bin[bin.length - 1] = '0';
-    checksum = unbinary(new String(bin));
-  }
+  Checksum(){ }
 
   void drawStatus(){
     //draw completed sections of the bar
